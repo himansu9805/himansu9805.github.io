@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css?family=JetBrains+Mono&display=regular");
+
+/* Text */
+.heading {
+  font-size: 4rem;
+}
+
+.subheading {
+  font-size: 2rem;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+}
+
+.justified {
+  text-align: justify;
+}
+
+/* Colors */
+.white {
+  color: white;
+}
+
+.blue {
+  color: #006eff;
+}
+
+/* Font attributes */
+.monospace {
+  font-family: "JetBrains Mono";
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Containers */
+.root {
+  position: relative;
+}
+
+.container-100 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.whole-page {
+  height: 100vh;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+/* Flex boxes */
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-space-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Padding */
+.p-5 {
+  padding: 10px;
+}
+
+/* Margin */
+.mx-2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mx-5 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.ml-5 {
+  margin-left: 5rem;
+}
+
+.mr-5 {
+  margin-left: 5rem;
+}
+
+.my-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+/* Width and Height */
+.w-100 {
+  width: 100%;
+}
+
+.h-20r {
+  height: 20rem;
+}
+
+/* Filter */
+.filter-gray {
+  filter: grayscale(1);
+}
+
+/* Button Attributes */
+.border-rounded {
+  border-radius: 16px;
+}
+
+.border-blue {
+  border: 1px solid #006eff;
+  background-color: transparent;
+  transition: all 300ms ease-out;
+  cursor: pointer;
+}
+
+.border-blue:hover {
+  border: 1px solid #006eff;
+  background-color: white;
+  transition: all 300ms ease-in;
+}
+
+/* Grid */
+.grid-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Card */
+.card {
+  position: relative;
+  margin: 0;
+}
+
+.card-image {
+  border-radius: 16px;
+}
+
+.card-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 16px;
+  width: 60%;
+  text-align: center;
+  color: black;
+}
+
+/* Transformations */
+.social-icon {
+  width: 3rem;
+}
+
+@media screen and (max-width: 480px) {
+  .flex-center-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-space-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mr-2 {
+    margin: 0rem;
+  }
+
+  .mx-5 {
+    margin: 1.7rem;
+  }
+
+  .h-20r {
+    height: 150px;
+    border-radius: 100%;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  .heading {
+    font-size: 2.75rem;
+    text-align: center;
+  }
+
+  .card-text {
+    font-size: 0.75rem;
+  }
+
+  .grid-container {
+    margin-bottom: 3rem;
+  }
+
+  .social-icon {
+    width: 3rem;
+  }
+}

@@ -1,0 +1,26 @@
+.love-not-war {
+  background-color: #ff30ac;
+  color: #fff;
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: center;
+  font-family: "Sora", sans-serif;
+  line-height: 28px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.love-not-war .peace-text {
+  text-align: center;
+  width: 98%;
+}
+
+.love-not-war .close {
+  margin-right: 12px;
+  cursor: pointer;
+  width: 1%;
+}

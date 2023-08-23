@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sora&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Domine&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Laila&display=swap");
+
+body {
+  margin: 0;
+}
+
+.black-bg {
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-text {
+  margin: 3rem;
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  bottom: 0;
+  z-index: 0;
+  color: white;
+  opacity: 0.25;
+}
+
+.background-text .background-text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.background-text .background-text-column .background-text-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.background-text .background-text-column .background-text-row .jp {
+  font-family: "Noto Serif JP", serif;
+  font-size: 5em;
+  writing-mode: vertical-rl;
+}
+
+.background-text .background-text-column .background-text-row .hi {
+  font-family: "Laila", serif;
+  font-size: 5em;
+}
+
+.background-text .background-text-column .background-text-row .ru {
+  font-family: "Playfair Display", serif;
+  font-size: 5em;
+}
+
+.column {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.me {
+  margin-left: 5%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-size: 6em;
+  color: #000000;
+  margin: 0;
+}
+
+.subheading {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 5em;
+  color: #006eff;
+}
+
+.paragraph-container {
+  width: 100%;
+}
+
+.paragraph {
+  font-family: "Domine", sans-serif;
+  font-size: 1.5em;
+  text-align: justify;
+  color: #000000;
+  margin-right: 10%;
+}
+
+.my-image {
+  width: 75%;
+  filter: grayscale(1);
+  margin: 10%;
+}
+
+.container-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-3 {
+  margin: 10%;
+}
+
+.frontend {
+  font-family: "Playfair Display", serif;
+  position: relative;
+  display: inline-block;
+  font-size: 5em;
+  background: linear-gradient(to left, white 50%, #0575e6 50%);
+  overflow: hidden;
+  background-clip: text;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: all 500ms ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.backend {
+  font-family: "Playfair Display", serif;
+  position: relative;
+  display: inline-block;
+  font-size: 5em;
+  background: linear-gradient(to left, white 50%, #05e67d 50%);
+  overflow: hidden;
+  background-clip: text;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: all 500ms ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.frontend:hover,
+.backend:hover {
+  background-position: 0 100%;
+}
+
+.text {
+  font-family: "Sora", sans-serif;
+  font-size: 1.5em;
+  color: white;
+  margin: 0%;
+}
+
+.technologies {
+  font-family: "Sora", sans-serif;
+  font-size: 1.5em;
+  color: black;
+  margin: 0%;
+  text-align: center;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  table-layout: fixed;
+}
+
+.tech-table {
+  width: 100%;
+}
+
+.tech-table td {
+  height: 50px;
+  width: 33%;
+}
+
+.heading-2 {
+  font-family: "Playfair Display", serif;
+  font-size: 4em;
+  color: white;
+  margin: 0;
+}
+
+.image-item {
+  width: 100px;
+  height: 100px;
+  transition: all 0.1s ease-in-out;
+  padding: 50px;
+}
+
+.github-image {
+  filter: invert(1);
+}
+
+@media only screen and (max-width: 480px) {
+  .background-text {
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    opacity: 0.2;
+  }
+
+  .me {
+    margin-left: 0%;
+  }
+
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .heading {
+    font-size: 5em;
+  }
+
+  .subheading {
+    font-size: 4em;
+  }
+
+  .paragraph-container {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .paragraph {
+    font-size: 1.25em;
+    margin: 0%;
+    margin-bottom: 10%;
+  }
+
+  .my-image {
+    width: 60%;
+  }
+
+  .my-image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+  }
+
+  .frontend {
+    font-size: 3em;
+  }
+
+  .backend {
+    font-size: 3em;
+  }
+
+  .text {
+    width: 90%;
+    text-align: center;
+  }
+
+  .divider {
+    width: 100%;
+    border: 1px solid white;
+  }
+
+  .tech-table {
+    font-size: 0.75em;
+  }
+
+  .heading-2 {
+    font-size: 3em;
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .image-item {
+    width: 75px;
+    height: 75px;
+    padding: 30px;
+  }
+
+  .github-image {
+    margin-top: 20%;
+  }
+}
