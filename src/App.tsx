@@ -22,6 +22,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    document.title = "Himansu - Software Engineer";
     setName(names[0].name);
   }, []);
 
