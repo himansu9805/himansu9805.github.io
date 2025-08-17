@@ -5,13 +5,12 @@ on:
     branches:
       - main
 
-environment:
-  name: Production
-  url: ${{ steps.deploy.outputs.firebase_url }}
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: Production
+      url: ${{ steps.deploy.outputs.firebase_url }}
 
     steps:
       - name: Checkout code
