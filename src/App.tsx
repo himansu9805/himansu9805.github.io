@@ -31,7 +31,7 @@ export default function App() {
       <div className="p-8">
         <div className="flex flex-col items-center justify-between">
           <section className="flex flex-col items-center justify-center mt-10">
-            <span className="font-mono text-6xl">Hey there!</span>
+            <span className="font-mono text-center text-6xl">Hey there!</span>
             <div className="flex flex-col justify-center mt-2 font-mono">
               <span className="text-center text-gray-600 text-4xl">You can call me</span>
               <span className="relative inline-block h-15 w-full text-center mt-4 text-[#006eff] text-6xl">

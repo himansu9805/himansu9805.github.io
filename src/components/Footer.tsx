@@ -65,7 +65,7 @@ export default function Footer() {
         <p className="text-base leading-6 text-center text-gray-500 font-mono">
           Built with{" "}
           <a
-            href="https://fresh.deno.dev/"
+            href="https://react.dev/"
             className="text-gray-500 hover:text-gray-900"
           >
             <img
@@ -76,13 +76,13 @@ export default function Footer() {
           </a>{" "}
           and deployed on{" "}
           <a
-            href="https://deno.com/"
+            href="https://console.firebase.google.com/"
             className="text-gray-500 hover:text-gray-900"
           >
             <img
-              className="inline-block w-7 h-7 dark:invert"
-              src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
-              alt="AWS"
+              className="inline-block w-7 h-7"
+              src="https://lh3.googleusercontent.com/k2JL-TVFKLdvBxyFEhSvLRXB6EaOYn4ba4BUBGV0SRR7gB1eN5ws5AEqEpY6qDk5eH9WrB2e4bvsAS2WvK2n"
+              alt="Firebase Hosting"
             />
           </a>
         </p>
